@@ -29,22 +29,6 @@ class Post(db.Model):
     date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow())
 
 
-posts = [
-    {
-        "author": "Damodar",
-        "title": "Blog Post-1",
-        "content": "First Post content!!!",
-        "date_posted": "June 16 , 2023",
-    },
-    {
-        "author": "Pushpalatha",
-        "title": "Blog Post-2",
-        "content": "Second Post content!!!",
-        "date_posted": "June 15 , 2023",
-    },
-]
-
-
 @app.route("/")
 @app.route("/home")
 def home():
